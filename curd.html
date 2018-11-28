@@ -1,0 +1,54 @@
+<DOCTYPE html>
+    <html>
+    <head>
+        <title>Ini kalkulator sederhana</title>
+    </head>
+    <body>
+    <table>
+        <tr>
+        <td>
+            Bilangan 1:
+        </td>
+            <td>
+                <input type="text" id="a" name="a">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Bilangan 2:
+            </td>
+            <td>
+                <input type="text" id="b" name="b">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Hasil:
+            </td>
+            <td>
+                <input type="text" id="c" name="c">
+            </td>
+        </tr>
+        <tr><td>
+            Operator:
+        </td>
+            <td>
+                <input type="button" value = + onclick = tambah()>
+                <input type="button" value = - onclick = kurang()>
+                <input type="button" value = / onclick = bagi()>
+                <input type="button" value = * onclick = kali()>
+                <input type="button" value == onclick = hasil()>
+            </td>
+        </tr>
+    </table>
+    <script>
+        function tambah() {
+         a = document.getElementById("a".value);
+         b = document.getElementById("b".value);
+         c = a+b;
+            c = document.getElementById("hasil".value=c);
+
+        }
+    </script>
+    </body>
+    </html>
