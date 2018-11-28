@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>This is the</title>
+</head>
+<body>
+<form name="calcu" action="#">
+    <p>bil 1 <input type="int" name="x"/></p>
+    <p>bil 1 <input type="int" name="y"/></p>
+    <p>hasil <input type="int" name="hasil" disabled="true"/></p>
+    <p>operator<select name="opt">
+        <option value="tambah"> + (tambah)</option>
+        <option value="kurang"> - (kurang)</option>
+        <option value="kali"> * (kali)</option>
+        <option value="bagi"> : (bagi)</option>
+    </select>
+    <input type="button" value="=" onclick="hitung()">
+    <input type="button" value="CLEAR" onclick="resetForm()">
+</form>
+
+<script language="JavaScript" type="text/javascript">
+
+    <!--
+
+    function hitung(){
+
+        var myForm = document.calcu;
+        var x=eval(myForm.x.value);
+        var y=eval(myForm.y.value);
+        var pil= myForm.opt.value;
+        if (pil == "tambah") {
+            var z = x + y;
+        }else if (pil == "kurang") {
+            var z = x - y;
+        } else if (pil == "kali") {
+            var z = x * y;
+        } else if (pil == "bagi") {
+            var z = x / y;
+        }
+        myForm.hasil.value = z;
+        myForm.x.value = "";
+        myForm.y.value = "";
+    }
+    function resetForm(){
+        document.calcu.reset();
+    }
+
+    //-->
+
+</script>
+
+</body>
+</html>
+</body>
+</html>
