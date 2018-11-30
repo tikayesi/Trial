@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>hahaha</title>
+</head>
+
+<script>
+    var a = prompt('masukan user anda :');
+    if(a != null) {
+        for (var i = 0; i < a; i++) {
+          //  for (var z = 1; z <= 3; z++) {
+                var nama = prompt("nama anda : ");
+                var mid = prompt("Nilai Midsemester anda : ");
+                var semester = prompt("Nilai Semester anda : ");
+                var hasil, Keterangan = prompt;
+                lol = 0.5 * mid;
+                lel = 0.5 * semester;
+                hasil = lol + lel;
+
+                if (hasil >= 80) {
+                    Keterangan = "A = Excellent ";
+                } else if (hasil >= 65) {
+                    Keterangan = "B = guudd ";
+                } else {
+                    Keterangan = "C = Jelek";
+                }
+
+                document.write("NILAI AKHIR UJIAN: " + nama + " adalah " + Keterangan + "<br>");
+            }
+        //}
+    }
+</script>
+</html>
