@@ -6,19 +6,15 @@
 </head>
 <script>
 
-    function volumekubus(a, b){
-        var x;
-        var z;
-        var total;
+    function faktorial(a){
+        var a;
+        if (a===0) return 1;
+        return a * faktorial(a-1);
 
-        x= a*a*a;
-        z = b*b*b;
-        total = x+z;
+        }
+
+        console.log(faktorial(3));
 
 
-        return total;
-    }
-
-    document.write(volumekubus(3, 4))
 </script>
 </html>
